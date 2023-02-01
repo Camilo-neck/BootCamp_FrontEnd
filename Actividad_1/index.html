@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Actividad_1</title>
-	<style>
-		body{
-			background-color: #f5f5f5;
-			font-family: Arial, Helvetica, sans-serif;
-		}
-		h1{
-			color: #000;
-			text-align: center;
-		}
-		h4{
-			color: #000;
-			text-align: center;
-		}
-		img{
-			width:20%;
-		}
-	</style>
-</head>
-<body>
-	<h1>Blog de Gatos</h1>	
-	<h4>La mejor información, imágenes y datos de gatos</h4>
-	<hr>
-	<!-- // Aquí va el contenido del blog con estilos en clases css, 3 layouts, datos curiosos en lista, imágenes curiosas y comentarios -->
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h2>¿Sabías que...</h2>
-				<ul>
-					<li>Los gatos tienen 32 músculos en las orejas</li>
-					<li>Los gatos tienen 230 huesos</li>
-					<li>Los gatos tienen 24 dientes</li>
-					<li>Los gatos tienen 3 ojos</li>
-					<li>Los gatos tienen 5 dedos en cada pata</li>
-					<li>Los gatos tienen 4 patas</li>
-					<li>Los gatos tienen 2 orejas</li>
-					<li>Los gatos tienen 1 nariz</li>
-					<li>Los gatos tienen 1 boca</li>
-					<li>Los gatos tienen 1 corazón</li>
-					<li>Los gatos tienen 1 cerebro</li>
-					<li>Los gatos tienen 1 cola</li>
-					<li>Los gatos tienen 1 cuerpo</li>
-					<li>Los gatos tienen 1 alma</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<h2>Imágenes curiosas</h2>
-				<img src="https://cataas.com/cat/says/hello" alt="Gato">
-				<img src="https://cataas.com/cat/says/wasap" alt="Gato">
-				<img src="https://cataas.com/cat/says/dude" alt="Gato">
-				<img src="https://cataas.com/cat/says/bootcamp" alt="Gato">
-				<img src="https://cataas.com/cat/says/frontend" alt="Gato">
-				<img src="https://cataas.com/cat/says/meow" alt="Gato">
-				<img src="https://cataas.com/cat/says/yeah" alt="Gato">
-				<img src="https://cataas.com/cat/says/mishi" alt="Gato">
-				<img src="https://cataas.com/cat/says/EZ" alt="Gato">
-				<img src="https://cataas.com/cat/says/GG" alt="Gato">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<h2>Comentarios</h2>
-				<form action="">
-					<label for="nombre">Nombre</label>
-					<input type="text" name="nombre" id="nombre">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
-					<label for="comentario">Comentario</label>
-					<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-					<input type="submit" value="Enviar">
-				</form>
-			</div>
-		</div>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Actividad_1</title>
+		<link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="bannerBg">
+            <div class="bannerContainer">
+                <div style="flex-grow: 1">
+                    <h1>Blog de Gatos</h1>
+                    <h4>La mejor información, imágenes y datos de gatos</h4>
+                </div>
+                <img
+                    style="margin-right: 40px"
+                    src="./images/cat-banner.webp"
+                    alt="Gato"
+                />
+            </div>
+        </div>
+        <!-- // Aquí va el contenido del blog con estilos en clases css, 3 layouts, datos curiosos en lista, imágenes curiosas y comentarios -->
+        <div class="container">
+            <section id="tips" style="text-align: center">
+                <h2>¿Cómo tratar con un gato?</h2>
+                <div class="tips-row">
+                    <div class="row-item">
+                        <img src="./images/not-paw.png" alt="Gato" />
+                        <h3>No jugar con patas</h3>
+                    </div>
+                    <div class="row-item">
+                        <img src="./images/no-punch.jpg" alt="Gato" />
+                        <h3>No educar a golpes</h3>
+                    </div>
+                    <div class="row-item">
+                        <img src="./images/5969774.png" alt="Gato" />
+                        <h3>No lo persigas</h3>
+                    </div>
+                </div>
+            </section>
+            <section id="sabias" style="text-align: center">
+                <h2>¿Sabías que...</h2>
+                <div class="row">
+                    <img
+                        style="width: 50%"
+                        src="./images/cat-sabias.jpg"
+                        alt="Gato"
+                    />
+                    <div class="col-12">
+                        <ul>
+                            <li>Los gatos tienen 32 músculos en las orejas</li>
+                            <li>Los gatos tienen 230 huesos</li>
+                            <li>Los gatos tienen 24 dientes</li>
+                            <li>Los gatos tienen 3 ojos</li>
+                            <li>Los gatos tienen 5 dedos en cada pata</li>
+                            <li>Los gatos tienen 4 patas</li>
+                            <li>Los gatos tienen 2 orejas</li>
+                            <li>Los gatos tienen 1 nariz</li>
+                            <li>Los gatos tienen 1 boca</li>
+                            <li>Los gatos tienen 1 corazón</li>
+                            <li>Los gatos tienen 1 cerebro</li>
+                            <li>Los gatos tienen 1 cola</li>
+                            <li>Los gatos tienen 1 cuerpo</li>
+                            <li>Los gatos tienen 1 alma</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+			<section style="display: flex; text-align: center; align-items: center; justify-items: center;">
+            <div style="text-align: center; height: 40rem; width: 80%; align-self: center;">
+                <h2>Imágenes curiosas</h2>
+                <div class="slideshow">
+                    <!-- carousel control buttons -->
+                    <button class="slide-btn slide-btn-1"></button>
+                    <button class="slide-btn slide-btn-2"></button>
+                    <button class="slide-btn slide-btn-3"></button>
+                    <button class="slide-btn slide-btn-4"></button>
+                    <!-- carousel wrapper which contains all images -->
+                    <div class="slideshow-wrapper">
+                        <div class="slide">
+                            <img class="slide-img" src="https://cataas.com/cat/says/hello" />
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img" src="https://cataas.com/cat/says/wasap" />
+                        </div>
+                        <div class="slide">
+                            <img
+                                class="slide-img"
+                                src="https://cataas.com/cat/says/dude"
+                            />
+                        </div>
+                        <div class="slide">
+                            <img
+                                class="slide-img"
+                                src="https://cataas.com/cat/says/frontend"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+			</section>
+			<br></br>
+			<br></br>
+			<br></br>
+            <div class="">
+                <div class="col-12">
+                    <h2>Comentarios</h2>
+                    <form action="">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                        <label for="comentario">Comentario</label>
+                        <textarea
+                            name="comentario"
+                            id="comentario"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
